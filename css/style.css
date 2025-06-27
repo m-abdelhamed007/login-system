@@ -1,0 +1,30 @@
+body{
+      background: #24353f;
+}
+#loginBtn
+{
+  
+  background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+}
+#loginBtn:hover
+{
+    background-color: #17a2b8;
+    background-image: none;
+    border-color: #17a2b8;
+}
+#signupBtn
+{
+  
+  background-color: transparent;
+    background-image: none;
+    border-color: #17a2b8;
+}
+#signupBtn:hover
+{
+    background-color: #17a2b8;
+    background-image: none;
+    border-color: #17a2b8;
+}
+

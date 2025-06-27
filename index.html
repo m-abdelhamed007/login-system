@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="vh-100 d-flex justify-content-center align-items-center flex-column">
+        <form class="p-3 shadow-lg text-center col-8 ">
+            <h1 class="text-white fs-2 my-2">Smart Login System</h1>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email address" />
+                <label for="email">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="pass" placeholder="Password" autocomplete="off" />
+                <label for="pass">Password</label>
+            </div>
+            <div id="warning" class="bg-danger p-3 rounded-2 mt-3 mb-0 text-white d-none">
+                <p class="text-center fs-5 m-0 fw-bold">
+                    Login Failed, Invalid Email or Password
+                </p>
+            </div>
+            <div id="success" class="bg-success p-3 rounded-2 mt-3 mb-0 text-white d-none">
+                <p class="text-center fs-5 m-0 fw-bold">
+                    Login success </p>
+            </div>
+            <div id="loginBtn" class="btn btn-outline-light text-white my-3 w-100">
+                Login
+            </div>
+            <p class="text-white">
+                Don't have an account?
+                <a class="text-dark-emphasis" href="./signup.html">Sign Up</a>
+            </p>
+        </form>
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
