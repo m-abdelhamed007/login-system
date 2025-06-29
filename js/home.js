@@ -4,7 +4,7 @@ var user =document.getElementById("userName");
  var data = JSON.parse(userData);
  user.innerHTML = data.name;
  logoutBtn.addEventListener('click',function(){
-     window.location.href = "./index.html";
+     window.location.href = "../index.html";
 
  });
  
