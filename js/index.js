@@ -5,10 +5,9 @@ var signupBtn = document.querySelector("#signupBtn");
 var username = document.getElementById("name");
 var email2 = document.getElementById("email2");
 var pass2 = document.getElementById("pass2");
-var user=document.getElementById("userName");
+
 var allUsersData = [];
 var currentUser='';
-        document.getElementById("userName").innerHTML =getCurrentUser().name;
 
 if (localStorage.getItem("allUserData") != null) {
     allUsersData = JSON.parse(localStorage.getItem("allUserData"));
@@ -34,6 +33,7 @@ function getCurrentUser() {
 }
 
 loginBtn.addEventListener("click", function () {
+
      for (var i = 0; i < allUsersData.length; i++) {
     if (allUsersData[i].email == email.value && allUsersData[i].pass == pass.value && allUsersData[i].email != "" && allUsersData[i].pass != ""
     ) {
@@ -41,7 +41,7 @@ loginBtn.addEventListener("click", function () {
       document.getElementById("success").classList.remove("d-none");
       setCurrentUser(i);
       window.location.href = "./home.html";
-      return; // Exit the function after successful login
+      return ; // Exit the function after successful login
     } else {
       document.getElementById("warning").classList.remove("d-none");
       document.getElementById("success").classList.add("d-none");
@@ -50,6 +50,7 @@ loginBtn.addEventListener("click", function () {
   if (allUsersData.length == 0) {
     document.getElementById("warning").classList.remove("d-none");
   }
+  
 });
 /////////////////////////////////////////////////////
 
